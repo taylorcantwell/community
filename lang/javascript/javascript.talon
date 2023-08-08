@@ -29,6 +29,8 @@ settings():
 (op | is) strict not equal: " !== "
 op null else: " ?? "
 
+
+
 state const: "const "
 
 state let: "let "
@@ -41,13 +43,14 @@ state async: "async "
 
 state await: "await "
 
-dot {user.code_common_member_function}:
-    user.insert_between(".{code_common_member_function}(", ")")
+#dot {user.code_common_member_function}:
+#  user.insert_between(".{code_common_member_function}(", ")")
 
-state map: app.notify('ERROR: Command deprecated; please use "dot map"')
-state filter: app.notify('ERROR: Command deprecated; please use "dot filter"')
-state reduce: app.notify('ERROR: Command deprecated; please use "dot reduce"')
+#state map: app.notify('ERROR: Command deprecated; please use "dot map"')
+#state filter: app.notify('ERROR: Command deprecated; please use "dot filter"')
+#state reduce: app.notify('ERROR: Command deprecated; please use "dot reduce"')
 
 state spread: "..."
 
 from import: user.insert_between(' from  "', '"')
+

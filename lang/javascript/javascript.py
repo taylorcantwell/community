@@ -21,6 +21,9 @@ ctx.lists["user.code_common_function"] = {
     "values": "Object.values",
 }
 
+
+
+
 mod.list("code_common_member_function", "Function to use in a dotted chain, eg .foo()")
 
 ctx.lists["user.code_common_member_function"] = {
@@ -43,6 +46,8 @@ ctx.lists["user.code_common_member_function"] = {
     "substring": "substring",
     "then": "then",
 }
+
+
 
 ctx.lists["user.code_keyword"] = {
     "a sink": "async ",

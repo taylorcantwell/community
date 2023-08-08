@@ -44,7 +44,7 @@ class NotSet:
 
 class NoFileServerException(Exception):
     pass
-
+()
 
 def write_json_exclusive(path: Path, body: Any):
     """Writes jsonified object to file, failing if the file already exists
